@@ -1,0 +1,24 @@
+.banner-introduce {
+  position: relative;
+
+  .introduce-title {
+    margin-bottom: 20px;
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  .t2 {
+    margin: 20px 0;
+  }
+  .row {
+    .col-4 {
+      padding-left: 0;
+
+      .introduce-image img {
+        border-radius: 4px;
+      }
+    }
+  }
+}

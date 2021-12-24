@@ -1,0 +1,136 @@
+.computer {
+  position: relative;
+  padding: 50px 0;
+
+  .computer-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    h2 {
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: 700;
+      color: #333;
+      text-transform: uppercase;
+    }
+    .computer-space {
+      display: flex;
+      align-items: center;
+      a {
+        border: 1px solid #e0e0e0;
+        padding: 10px 11px;
+        border-radius: 16px;
+        font-size: 13px;
+        margin-left: 10px;
+        line-height: 10px;
+        color: #333;
+        &:hover {
+          color: #1b6dc1;
+        }
+      }
+    }
+  }
+  .computer-item {
+    border: 1px solid #f1f1f1;
+    padding: 10px 15px;
+    height: 480px;
+  }
+  .computer-item {
+    &:hover {
+      box-shadow: 0 2px 12px rgb(0 0 0 / 12%);
+      .computer-image img {
+        transform: translateY(-10px);
+      }
+      .computer-info h4 {
+        color: #1b6dc1;
+      }
+    }
+  }
+  .computer-image {
+    margin-top: 20px;
+    height: 215px;
+
+    img {
+      width: 200px;
+      transition: all 0.3s ease;
+    }
+  }
+  .computer-info {
+    .proc-label {
+      display: inline-flex;
+      align-items: center;
+      overflow: hidden;
+      max-width: 100%;
+      padding-right: 8px;
+      border-radius: 20px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+      span {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 10px;
+        margin-left: 5px;
+        margin-bottom: 0;
+      }
+    }
+    h4 {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 5px;
+      font-weight: 400;
+      color: #333;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+    }
+    .price {
+      margin-top: 10px;
+      span {
+        display: inline-block;
+        color: #333;
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 5px;
+      }
+    }
+    p.item-gift {
+      font-size: 13px;
+      color: #333;
+      margin: 5px 0;
+    }
+    strong {
+      color: #222;
+      font-weight: 700;
+      font-size: 16px;
+    }
+  }
+}
+
+.item-ram {
+  margin: 5px 0;
+  span {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    color: #333;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    margin-right: 5px;
+    padding: 4px 5px;
+  }
+}
+
+.computer-main {
+  .swiper {
+    .swiper-button-next,
+    .swiper-button-prev {
+      transform: translateY(-60%);
+    }
+  }
+}

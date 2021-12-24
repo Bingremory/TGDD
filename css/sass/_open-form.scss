@@ -1,0 +1,107 @@
+.open-form {
+  position: fixed;
+  z-index: 10;
+  position: fixed;
+  background: #fff;
+  max-width: 475px;
+  align-items: center;
+  margin: auto;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  border-radius: 8px;
+  display: none;
+  &.show {
+    display: block;
+  }
+  .open-form--heading {
+    padding: 17px 10px;
+    position: relative;
+    text-align: center;
+    border-bottom: 1px solid #ebebeb;
+    width: 100%;
+    h4 {
+      color: #333;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 18px;
+    }
+    a {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      color: #333;
+      cursor: pointer;
+      line-height: 21px;
+      padding: 7px;
+      width: 75px;
+      display: flex;
+      align-items: center;
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+  .open-form--item {
+    position: relative;
+    padding: 15px 45px;
+    line-height: 25px;
+    .dropdown {
+      position: relative;
+      margin-top: 10px;
+      .dropdown-select {
+        width: 100%;
+        position: relative;
+        background-color: #fff;
+        padding: 10px 15px;
+        border-radius: 4px;
+        border: 1px solid #ebebeb;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+      }
+      .dropdown-list {
+        padding: 10px 15px;
+        background-color: #fff;
+        border: 1px solid #ebebeb;
+        position: absolute;
+        top: 100%;
+        border-radius: 4px;
+        width: 100%;
+        display: none;
+        .dropdown-item {
+          padding: 10px 0;
+          cursor: pointer;
+          display: block;
+        }
+        &.is-show {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: none;
+  &.show {
+    display: block;
+  }
+}
+
+body.block {
+  overflow: hidden;
+}
